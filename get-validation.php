@@ -3,7 +3,7 @@
 // Cek apakah parameter 'name' ada di URL dan tidak kosong
 if (!isset($_GET['name']) || $_GET['name'] == "") {
     // Jika 'name' tidak ada / kosong, kasih HTTP response code 400 (Bad Request)
-    http_response_code(400);
+    http_response_code(400); // response code
 
     // Tampilkan pesan error ke user
     echo "Name is Required";
